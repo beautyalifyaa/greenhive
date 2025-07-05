@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .navbar {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+  }
+  
+  .navbar nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: bold;
+  }
+  
+  .btn-header {
+    background: #2e7d32;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  
+  .hero-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 125, 50, 0.4); /* hijau dengan opacity 40% */
+    z-index: 1;
+  }
+  
+  .hero-text {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    padding: 2rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text .btn {
+    background: #66bb6a;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .why-container {
+    padding: 0 40px;
+  }  
+
+  .fitur {
+    padding: 4rem 2rem;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .fitur-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+  
+  .fitur-item {
+    background: #e8f5e9;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 250px;
+    font-weight: bold;
+    color: #2e7d32;
+  }
+  
+  .testimoni {
+    padding: 3rem 2rem;
+    background: #f1f8e9;
+    text-align: center;
+  }
+  
+  .testi-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: nowrap; /* ini yang memaksa satu baris */
+    overflow-x: auto;   /* supaya tetap bisa di-scroll kalau kepanjangan */
+  }
+  
+  
+  .testi-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 300px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .footer {
+    background: #2e7d32;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .footer a, .footer p {
+    color: white;
+    text-decoration: none;
+  }
+
+  .history {
+    padding: 3rem 2rem;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .history-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .history-item {
+    background: #e8f5e9;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 250px;
+    font-weight: bold;
+    color: #2e7d32;
+  }
+
+  .konsep-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .konsep-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 45%; /* agar 2 kotak per baris */
+    min-width: 280px; /* tetap responsif */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+  }
+
+.video-section {
+  padding: 4rem 2rem;
+  background-color: #f1f8e9;
+  text-align: center;
+}
+
+.video-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2e7d32;
+}
+
+.video-wrapper {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+.lahan {
+    padding: 4rem 2rem;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .lahan-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .lahan-item {
+    background: #e8f5e9;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 250px;
+    font-weight: bold;
+    color: #065021;
+  }
+  .kerja-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 300px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .kerja {
+    padding: 3rem 2rem;
+    background: #f1f8e9;
+    text-align: center;
+  }
+  
+  .kerja-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap; /* ini yang memaksa satu baris */
+    overflow-x: auto;   /* supaya tetap bisa di-scroll kalau kepanjangan */
+  }
+  
+  
+  .kerja-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 300px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .perawatan {
+    padding: 4rem 2rem;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .perawatan-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  } 
+  
+  .perawatan-item {
+    background: #e8f5e9;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 250px;
+    color: #000000;
+  }
+  
+  .kontak {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .kontak-form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .kontak-form input,
+  .kontak-form textarea {
+    width: 90%;
+    max-width: 400px;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .kontak-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .kontak-form .btn {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  

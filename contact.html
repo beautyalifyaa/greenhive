@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Greenhive | Kontak</title>
+  <link rel="stylesheet" href="css-style.css">
+</head>
+<body>
+  <header class="navbar">
+    <img src="img/newlogo.jpg" width="200", height="auto">
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="about.html">Tentang</a>
+      <a href="how-it-works.html">Cara Kerja</a>
+      <a href="packages.html">Paket</a>
+    </nav>
+      <a class="btn-header" href="contact.html">Contact</a>
+  </header>
+
+  <main class="kontak">
+    <h1>Hubungi Kami</h1>
+    <p>Silakan isi form berikut dan kami akan menghubungi Anda melalui WhatsApp.</p>
+
+    <form onsubmit="sendToWhatsApp(event)" class="kontak-form">
+      <input type="text" id="name" placeholder="Nama Anda" required>
+      <input type="text" id="location" placeholder="Lokasi Lahan (Kota/Kecamatan)" required>
+      <textarea id="message" placeholder="Pesan atau pertanyaan..." required></textarea>
+      <button type="submit" class="btn">Kirim via WhatsApp</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">GREENHIVE</div>
+    <div class="footer-info">
+      <p>WhatsApp: <a href="https://wa.me/6281235886874" target="_blank">+625232116705</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/greenhive.greener" target="_blank">@greenhive.greener</a></p>
+      <p>Email: <a href="mailto:greenhive823@gmail.com">greenhive823@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    function sendToWhatsApp(event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value;
+      const location = document.getElementById("location").value;
+      const message = document.getElementById("message").value;
+
+      const phoneNumber = "6281235886874"; // Ganti dengan nomor WhatsApp tujuan
+      const url = `https://wa.me/+${phoneNumber}?text=Halo Greenhive!%0ASaya ${name} dari ${location}.%0A${message}`;
+
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>
